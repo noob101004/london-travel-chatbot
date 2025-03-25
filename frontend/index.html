@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>London Travel Guide Chatbot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        
+        header {
+            background-color: #1d3557;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        
+        .chat-box {
+            height: 300px;
+            padding: 20px;
+            overflow-y: auto;
+            background-color: #f9f9f9;
+        }
+        
+        .input-area {
+            display: flex;
+            padding: 15px;
+            border-top: 1px solid #e9ecef;
+        }
+        
+        #user-input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        
+        #send-button {
+            margin-left: 10px;
+            padding: 10px 20px;
+            background-color: #1d3557;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>London Travel Guide</h1>
+        </header>
+        
+        <div class="chat-box" id="chat-box">
+            <!-- Messages will appear here -->
+        </div>
+        
+        <div class="input-area">
+            <input type="text" id="user-input" placeholder="Ask me about London...">
+            <button id="send-button">Send</button>
+        </div>
+    </div>
+
+    <script>
+        // We'll add JavaScript functionality tomorrow
+        document.addEventListener('DOMContentLoaded', function() {
+            const chatBox = document.getElementById('chat-box');
+            
+            // Add a welcome message
+            const welcomeMessage = document.createElement('div');
+            welcomeMessage.style.padding = '10px';
+            welcomeMessage.style.background = '#e3f2fd';
+            welcomeMessage.style.borderRadius = '5px';
+            welcomeMessage.style.marginBottom = '10px';
+            welcomeMessage.textContent = "👋 Welcome to the London Travel Guide! I'm still learning, but soon I'll be able to help you explore London.";
+            chatBox.appendChild(welcomeMessage);
+        });
+    </script>
+</body>
+</html>
